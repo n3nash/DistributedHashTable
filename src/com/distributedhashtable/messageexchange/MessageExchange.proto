@@ -1,0 +1,15 @@
+package messageexchange;
+
+option java_package = "com.distributedhashtable.messageexchange";
+option java_outer_classname = "TransferMessages";
+
+message Messages {
+  required string typeOfMessage = 1;
+  required string transferMessage = 2;
+  optional string key = 3;
+  optional string value = 4;
+  optional  string keyHash = 5;
+  optional string ipaddress = 6;
+  optional int32 socket = 7;
+  optional int32 sendOrRecieve = 8;
+  }

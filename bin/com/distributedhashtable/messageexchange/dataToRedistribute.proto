@@ -1,0 +1,9 @@
+package messageexchange;
+
+option java_package = "com.distributedhashtable.messageexchange";
+option java_outer_classname = "RedistributeData";
+
+message DataRedistribution {
+  repeated string key = 1;
+  repeated string value = 2;
+  }
